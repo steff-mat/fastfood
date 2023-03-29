@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import Pasta from "../images/pasta.jpeg";
-import Pizza from "../images/pizza.jpeg";
-import Salad from "../images/salad.webp";
-import Burger from "../images/burger.jpeg";
-import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import { RxDotFilled } from "react-icons/rx";
+import React, { useState, useEffect } from 'react';
+import Pasta from '../images/pasta.jpeg';
+import Pizza from '../images/pizza.jpeg';
+import Salad from '../images/salad.webp';
+import Burger from '../images/burger.jpeg';
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+import { RxDotFilled } from 'react-icons/rx';
 
 function Holder() {
   const slides = [
@@ -47,7 +47,7 @@ function Holder() {
   }, [currentIndex]);
 
   return (
-    <div className="max-w-[1080px] h-[780px] w-full m-auto py-16 px-4 relative group">
+    <div className="lg:h-[1080px] lg:w-[1080px] md:h-[750px] md:w-[750px] sm:w-[500px] sm:h-[500px] min-w-[100px] min-h-[100px] m-auto py-16 px-4 relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].photo})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500 :object-scale-down"
