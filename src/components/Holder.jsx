@@ -47,7 +47,7 @@ function Holder() {
   }, [currentIndex]);
 
   return (
-    <div className="lg:h-[1080px] lg:w-[1080px] md:h-[500px] md:w-[600px] sm:w-[400px] sm:h-[300px] m-auto py-16 px-4 relative group">
+    <div className="lg:h-[1080px] lg:w-[1080px] md:h-[500px] md:w-[600px] sm:w-[400px] sm:h-[400px] m-auto py-16 px-4 relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].photo})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500 :object-scale-down"
